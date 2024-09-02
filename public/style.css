@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
@@ -38,6 +39,10 @@
   margin: 0 0.5rem;
 }
 
+#show_chat {
+  display: none;
+}
+
 .main-chat-window {
   overflow-y: scroll;
 }
@@ -52,7 +57,19 @@
   flex-direction: column;
 }
 
-.message>span {
+.message > b {
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.message > b > i {
+  margin-right: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.message > span {
   background-color: #eeeeee;
   margin: 1rem 0;
   padding: 1rem;
@@ -66,17 +83,13 @@
   justify-content: center;
 }
 
-.main_message_container>input {
+.main_message_container > input {
   height: 50px;
   flex: 1;
   font-size: 1rem;
   border-radius: 5px;
   padding-left: 20px;
   border: none;
-}
-
-#show_chat {
-  display: none;
 }
 
 .header_back {
